@@ -6,6 +6,7 @@ import classe_parametres as CPa
 import classe_population as CPo
 import fonctions as fct
         
+        
 random.seed(0)  #initialise le générateur de nombres aléatoires
 
         

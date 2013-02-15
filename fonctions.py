@@ -53,7 +53,7 @@ def saut(pop,i,taux_i, param):
     u = random.random()   #u suit une loi U([0,1])
     if u<(param.taux_de_reproduction/taux_i):   #naissance
         y = pop.individus[i].naissance(param)   #y est le nouvel individu
-        pop = pop.ajouter(y,param)
+        pop.ajouter(y,param)
     else:                                       #mort
         pop.tuer(i,param)
 

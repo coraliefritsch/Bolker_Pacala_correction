@@ -65,8 +65,8 @@ class individu(object):
         x = self.x + r * np.cos(theta)
         y = self.y + r * np.sin(theta)
         #Si l'individu sort du domaine on lui fait subir une translation :
-        x = x - np.floor(x/param.Lx)
-        y = y - np.floor(y/param.Ly)
+        x = x - param.Lx * np.floor(x/param.Lx)
+        y = y - param.Ly * np.floor(y/param.Ly)
         return individu(x,y)
     
     
